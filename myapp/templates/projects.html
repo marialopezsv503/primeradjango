@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+Pagina Web Projects
+
+todos projects: {{ todosprojects }}
+<hr>
+<table border="1" style="border: 10cap;">
+{%   for cadaproject in todosprojects %}
+  <tr><td> {{ forloop.counter }}. </td>  
+      <td>  
+         <a href="{%  url 'proyectodetalle' cadaproject.id  %}"> {{ cadaproject.name }} </a>
+      </td></tr>
+{% endfor %}
+</table>
+
+{% endblock %}

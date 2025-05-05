@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Mi Tabla y Formulario</h1>
+
+
+    <h2>Mi Tabla</>
+    <table border="1">
+        <thead>
+            <tr bgcolor="yellow">
+                <th>Nombres</th>
+                <th>Lugar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carlitos </td>
+                <td>Apopa</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Soyapango</td>
+            </tr>
+            <tr>
+                <td>Netillo</td>
+                <td>Tecla</td>
+            </tr>
+            </tbody>
+    </table>
+
+    <h2>Ingresa Texto</h2>
+    <input type="text" id="miCajaDeTexto">
+    <button id="miBoton">Mostrar Texto</button>
+    <p id="resultado"></p>
+
+<br> mivar: {{mivariable}}
+
+<br><br> todosprojects: {{todosprojects}}
+
+    <script>
+        const boton = document.getElementById('miBoton');
+        const cajaTexto = document.getElementById('miCajaDeTexto');
+        const resultadoParrafo = document.getElementById('resultado');
+
+        boton.addEventListener('click', function() {
+            const textoIngresado = cajaTexto.value;
+            resultadoParrafo.textContent = 'Texto ingresado: ' + textoIngresado;
+        });
+    </script>
+
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Paginas Tasks.html </h1>
+
+<!--  Comentario en HTML  que SI se vera en el navegador -->
+{# Comentario de Jinja  #}
+
+{% for cadatask in todastasks %}
+  <br> {{cadatask.id }} - {{cadatask.title1 }}  {% if cadatask.done == False %} ⏳ {% else %}  ✅ {% endif %}
+
+  <p> <button> Delete </button> </p> 
+  <p><button>  ✅ Done </button> </p>
+{% endfor %}
+
+
+{% endblock %}
