@@ -11,8 +11,13 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+<<<<<<< HEAD
 #import pymysql
 #pymysql.install_as_MySQLdb()
+=======
+# import pymysql
+# pymysql.install_as_MySQLdb()
+>>>>>>> 0190b57229125a91a44e51c76867390f9d606af3
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
