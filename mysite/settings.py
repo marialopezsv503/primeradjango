@@ -90,14 +90,26 @@ DATABASES = {
     ##    'PORT':'3306'
     ## }   
 
-       'default': {
+    ##   Configurac PostGres Local
+    ######################################################
+    ##   'default': {
+    ##    'ENGINE': 'django.db.backends.postgresql',
+    ##    'NAME': 'myapp_db',
+    ##    'USER': 'postgres',
+    ##    'PASSWORD':'admin789',
+    ##    'HOST':'localhost',
+    ##    'PORT':'5432'
+    ##}
+
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myapp_db',
-        'USER': 'postgres',
-        'PASSWORD':'admin789',
-        'HOST':'localhost',
+        'NAME': 'bzkejx4criz6hi4b0mes',
+        'USER': 'uqpjvrnw5mzu4yosaeqg',
+        'PASSWORD':'23f2NWdETBWCJd5PKCbOJS01E5z42j',
+        'HOST':'bzkejx4criz6hi4b0mes-postgresql.services.clever-cloud.com',
         'PORT':'5432'
     }
+    
 }
 
 
